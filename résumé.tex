@@ -44,7 +44,7 @@
 
   \section{SELECTED PROGRAMMING EXPERIENCE}
   \newcommand\prExpEntry[3]{\textrm{#1}\hfill \small(#2 ; #3) \\}
-  \prExpEntry{\textbf{\href{https://www.npmjs.com/package/js-draw}{js-draw}} — \footnotesize collaborative drawing with $\textrm{zoom} \in [10^{-10}, 10^{10}]$. Published on NPM.}{TypeScript, HTML}{2022}
+  \prExpEntry{\textbf{\href{https://www.npmjs.com/package/js-draw}{js-draw}} — \footnotesize collaborative drawing library --- $\textrm{zoom} \in [10^{-10}, 10^{10}]$, Bézier-fit strokes (using \texttt{bezier.js} for curve intersection and normals), 9-tree-based caching of renders, and SVG import/export.}{TypeScript, HTML}{2022}
   \prExpEntry{\textbf{\href{https://personalizedrefrigerator.github.io/jekyll-hematite-theme/}{Jekyll Hematite Theme}} — \footnotesize a responsive theme for class websites and blogs}{\small JavaScript, SCSS }{2022}
   \prExpEntry{\textbf{\href{https://henry-heino.web.app/2022/09/05/gsoc-final-reflection/}{Joplin: Google Summer of Code}} — \footnotesize Improved app accessibility and usability}{\small React Native}{2022}
   \prExpEntry{\href{https://github.com/xournalpp/xournalpp}{Xournal++} Maintainer (One of Several)}{C++/GTK3}{2020 - 2022}
@@ -53,24 +53,23 @@
   \prExpEntry{\href{https://github.com/UWAppDev/opportunities-forwarding-bot}{Opportunities Forwarding Bot} --- {\footnotesize Forwards AppDev@UW opportunities from GitHub to Discord}}{Rust}{2021}
   \prExpEntry{KDE \href{https://invent.kde.org/utilities/konsole/-/merge_requests/516}{Konsole --- {\footnotesize Touchscreen scrolling}}}{C++/Qt}{Oct 2021}
   \prExpEntry{\href{https://github.com/holzschu/a-shell/pull/246}{{a-Shell iOS} --- {\footnotesize Touchscreen scrolling and gestures}}}{JavaScript}{2021}
-  \prExpEntry{Almost-Make: \href{https://github.com/personalizedrefrigerator/AlmostMake}{Make Implementation}}{Python}{2020}
-  \prExpEntry{\href{https://github.com/personalizedrefrigerator/LibJS}{{\footnotesize Personal JS Library:} {\small Provides a Code Editor, Bézier Curve Editor, \& more.}}}{JavaScript}{2019-2020}
+  \prExpEntry{\href{https://github.com/personalizedrefrigerator/LibJS}{{\footnotesize JS Library} --- {\footnotesize Provides a Code Editor, Bézier Curve Editor, \& more.}}}{JavaScript}{2019-2020}
+  \prExpEntry{Almost-Make --- \href{https://github.com/personalizedrefrigerator/AlmostMake}{Make Implementation}}{Python, Makefile}{2020}
 
   \section{SELECTED COURSEWORK}
   \begin{addmargin}[2em]{2em}
-    \def\cseRf#1#2{{#2}}
+    \def\cseRf#1#2#3{{#2 \def\temp{#3}\def\empty{}\ifx\temp\empty\else{(#3)}\fi}}
     \def\cseSp{ | }
     \small
 
-    \cseRf{446}{Machine Learning}
-    \cseSp{}\cseRf{332}{Data Structures and Parallelism}
-    \cseSp{}\cseRf{331}{Software Design and Implementation}
-    \cseSp{}\cseRf{474}{Introduction to Embedded Systems}
-    \cseSp{}\cseRf{369}{Introduction to Digital Design}
-    \cseSp{}\cseRf{340}{Interaction Programming}
-    \cseSp{}\cseRf{340}{Interaction Programming}
-    \cseSp{}\cseRf{401}{Introduction to Compiler Construction}
-    \cseSp{} Currently taking \cseRf{421}{Introduction to Algorithms}
+    \cseRf{446}{Machine Learning}{}
+    \cseSp{}\cseRf{332}{Data Structures and Parallelism}{}
+    \cseSp{}\cseRf{331}{Software Design and Implementation}{}
+    \cseSp{}\cseRf{474}{Introduction to Embedded Systems}{}
+    \cseSp{}\cseRf{369}{Introduction to Digital Design}{FPGA programming with SystemVerilog}
+    \cseSp{}\cseRf{340}{Interaction Programming}{UI design principles with Android}
+    \cseSp{}\cseRf{401}{Introduction to Compiler Construction}{Created a mini-Java compiler}
+    \cseSp{} Currently taking \cseRf{421}{Introduction to Algorithms}{}
   \end{addmargin}
 
   \section{OTHER EXPERIENCE}
